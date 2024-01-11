@@ -18,7 +18,8 @@ Is output an error?: No
 <br/>
 
 * Example of using the command with a path to a directory as an argument
-<img width="1440" alt="Screen Shot 2024-01-11 at 3 21 50 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/0b500e72-d8e9-4490-8738-ec91d0a5bc7c">
+   <img width="1440" alt="Screen Shot 2024-01-11 at 3 21 50 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/0b500e72-d8e9-4490-8738-ec91d0a5bc7c">
+<br/>
 <br/>
 Working directory when command was run: /home
 <br/>
