@@ -1,9 +1,9 @@
 Hello World!!!
 
-#Lab Report 1 - Remote Access and FileSystem (Week 1)
+#Lab Report 1 - Remote Access and FileSystem 
 ---
 
-##1. cd
+1. cd
    
 * Example of using the command with no arguments
   
@@ -14,7 +14,7 @@ Hello World!!!
   
 
    ---
-##3. ls
+3. ls
 
 * Example of using the command with no arguments
   
@@ -25,4 +25,4 @@ Hello World!!!
   
 
    ---
-##5. cat
+4. cat
