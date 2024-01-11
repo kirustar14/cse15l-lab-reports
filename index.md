@@ -7,6 +7,7 @@ Hello World!!!
    
 * Example of using the command with no arguments
   <img width="1440" alt="Screen Shot 2024-01-11 at 3 16 47 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/d3f597a2-10b7-4b08-949f-69a0adb467e9">
+<br/>
 Working directory when command was run: /home
 <br/>
 <br/>
