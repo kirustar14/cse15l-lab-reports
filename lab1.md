@@ -25,12 +25,22 @@ Is output an error?: Yes. The output indicates that there is a error with the ar
 3. ls
 
 * Example of using the command with no arguments
-  
-* Example of using the command with a path to a directory as an argument
-  
-* Example of using the command with a path to a file as an argument
+  <img width="1440" alt="Screen Shot 2024-01-16 at 9 59 15 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/8806abb4-7d88-4fb3-9a2d-d3579096c7e6">
+Working directory when command was run: /home <br/>
+The command ls gies you a list of all the folders/files and items directly inside your current working directory. Because we are in the directory /home when the command was run and the only thing inside that directory is the lecture1 folder, when we run the command ls it prints out lecture1 which is the only item inside our working directory.   <br/>
+Is output an error?: No. <br/> <br/>
 
-  
+* Example of using the command with a path to a directory as an argument
+  <img width="1440" alt="Screen Shot 2024-01-16 at 10 14 10 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6f3faffd-b16a-4864-844f-cb0ce2d62e21">
+Working directory when command was run: /home <br/>
+The command ls gives you a list of all the folders/files and items directly inside your current working directory. However we wrote ls lecture1, and lecture1 is a directory on its own. So when we write the command ls with another directory as its argument the terminal will print out all the folders/file in that specific directory not in the current working directory. So the terminal printed out 'Hello.class  Hello.java  messages  README' which are are all the items in the /home/lecture1 directory. Whereas if we had just written ls it would instead print out the items in our current working directory. <br/>
+Is output an error?: No. <br/> <br/>
+
+* Example of using the command with a path to a file as an argument
+<img width="1440" alt="Screen Shot 2024-01-16 at 10 30 56 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/c6d22415-5887-4a99-9efe-367bb5213b0a">
+Working directory when command was run: /home/lecture1 <br/>
+The command ls gives you a list of all the folders/files and items directly inside your current working directory. However we wrote ls Hello.java and Hello.java is a file inside our current working directory (inside the lecture1 folder). And we see the terminal simply prints out the name of the file we provided as a argument. So if we provide a argument that is a file inside oru current working directory with the ls command it simply prints out the name of the file agian in the terminal. <br/>
+Is output an error?: No. <br/> <br/>
 
    ---
 4. cat
