@@ -54,7 +54,7 @@ Is output an error?: No. <br/> <br/>
 * Example of using the command with a path to a directory as an argument
   <img width="1440" alt="Screen Shot 2024-01-16 at 11 12 39 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/5b0c932f-2964-43f9-82fd-701829e9fce9"> <br/> 
 Working directory when command was run: /home <br/>
-The command cat should simply print out whatever is in the file that is given as a argument as text. However in this case we wrote cat lecture1, and lecture1 is a folder inside /home. So since the argument is a path to a directory there is a message on the terminal saying 'cat: lecture1: Is a directory'. Showing that the command cat was given  <br/>
+The command cat should simply print out whatever is in the file that is given as a argument as text. However in this case we wrote cat lecture1, and lecture1 is a folder inside /home. So since the argument is a path to a directory there is a message on the terminal saying 'cat: lecture1: Is a directory'. Showing that the command cat was given however the argument that was given (lecture1) is actually not a file but a directory.  <br/>
 Is output an error?: No. <br/> <br/>
 
 * Example of using the command with a path to a file as an argument
