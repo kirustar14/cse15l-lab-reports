@@ -1,6 +1,8 @@
 Hello World!!!
 
-# Lab Report 1 - Remote Access and FileSystem
+# Lab Report 1 - Remote Access and FileSystem 
+Name: Kiruthika Marikumaran 
+PID: A17877875
  ---
 
 1. cd
@@ -27,13 +29,13 @@ Is output an error?: Yes. The output indicates that there is a error with the ar
 * Example of using the command with no arguments
   <img width="1440" alt="Screen Shot 2024-01-16 at 9 59 15 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/8806abb4-7d88-4fb3-9a2d-d3579096c7e6"> <br/>
 Working directory when command was run: /home <br/>
-The command ls gies you a list of all the folders/files and items directly inside your current working directory. Because we are in the directory /home when the command was run and the only thing inside that directory is the lecture1 folder, when we run the command ls it prints out lecture1 which is the only item inside our working directory.   <br/>
+The command ls gies you a list of all the folders/files and items directly inside your current working directory. Because we are in the directory /home when the command was run and the only thing inside that directory is the lecture1 folder, when we run the command ls it prints out lecture1 which is the only item inside our working directory. And lecture1 is written in blue indicating that lecture1 item is also a directory itself.   <br/>
 Is output an error?: No. <br/> <br/>
 
 * Example of using the command with a path to a directory as an argument
   <img width="1440" alt="Screen Shot 2024-01-16 at 10 14 10 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6f3faffd-b16a-4864-844f-cb0ce2d62e21"> <br/>
 Working directory when command was run: /home <br/>
-The command ls gives you a list of all the folders/files and items directly inside your current working directory. However we wrote ls lecture1, and lecture1 is a directory on its own. So when we write the command ls with another directory as its argument the terminal will print out all the folders/file in that specific directory not in the current working directory. So the terminal printed out 'Hello.class  Hello.java  messages  README' which are are all the items in the /home/lecture1 directory. Whereas if we had just written ls it would instead print out the items in our current working directory. <br/>
+The command ls gives you a list of all the folders/files and items directly inside your current working directory. However we wrote ls lecture1, and lecture1 is a directory on its own. So when we write the command ls with another directory as its argument the terminal will print out all the folders/file in that specific directory not in the current working directory. So the terminal printed out 'Hello.class  Hello.java  messages  README' which are are all the items in the /home/lecture1 directory. Whereas if we had just written ls it would instead print out the items in our current working directory. And the messages is written in blue because messages is its own directory (folder) whereas everything else is written in grey because the other items are simply other single files not folders. <br/>
 Is output an error?: No. <br/> <br/>
 
 * Example of using the command with a path to a file as an argument
@@ -58,3 +60,8 @@ The command cat should simply print out whatever is in the file that is given as
 Is output an error?: Yes. The error message is indicating that the command cat was given a path to a directory (lecture1) instead of a path to a file that the cat command needs so it can read the contents of the file and print it out as text in the terminal. <br/> <br/>
 
 * Example of using the command with a path to a file as an argument
+<img width="1437" alt="Screen Shot 2024-01-16 at 6 24 53 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/302cbca8-3628-4d00-ac69-e84945bb7b1d"> <br/>
+Working directory when command was run: /home/lecture1 <br/>
+The command cat should simply print out whatever is in the file that is given as a argument as text. In our case we wrote cat Hello.java when we are inside the /home/lecture1 directory. And Hello.java is a file inside our current working directory. So the command simply printed out all the contents in the Hello.java file as text in the terminal. <br/>
+Is output an error?: No. <br/> <br/>
+
