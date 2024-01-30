@@ -111,7 +111,22 @@ public class Server {
 
 
 ```
+# Using /add-message 
 
+1. 
+<img width="1440" alt="Screen Shot 2024-01-30 at 10 35 19 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/0359b0a9-fc05-4e35-bd25-ea3d4bacc798">
+
+- Which methods in your code are called?
+  In my code the 'public String handleRequest(URI url)' , 'url.getQuery()', and ' Server.start(port, new Handler())' are the important methods that are called for this program in the file ChatServer.java. And in 
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
+
+2. <img width="1440" alt="Screen Shot 2024-01-30 at 10 37 32 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/1cb0c4a0-2a89-4fb9-9808-da2d05c2baaf">
+
+- Which methods in your code are called?
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 
 
