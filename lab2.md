@@ -150,10 +150,14 @@ Absolute Path To Private Key: /home/.ssh/id_ed25519 <br> </br>
 <img width="1440" alt="Screen Shot 2024-01-30 at 7 30 50 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6f7942cb-3f13-4899-aec2-ea189069a187">
 
 
-Absolute Path To Public Key:/home/linux/ieng6/oce/7b/kmarikumaran/.ssh <br> </br> 
+Absolute Path To Public Key: /home/linux/ieng6/oce/7b/kmarikumaran/.ssh <br> </br> 
 <img width="1440" alt="Screen Shot 2024-01-30 at 7 44 16 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6cda646f-b8e0-45a4-8845-80187e535dc4">
 
 
 Login In Without Password: 
 <img width="1200" alt="Screen Shot 2024-01-30 at 7 33 51 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/4d58cb36-c247-40dd-9c6b-f98d49053804">
 
+---
+# Part 3: Something I Learned 
+
+Something I learned from the labs was that you can create keys in order to verify security purposes for loggining into accounts. I didn't know that there could be 2 different types of keys, public and private before the lab and I didnt know you could simply bypass logging in with a pssword if you have that key pair. Another thing I learned were different terminal commands, I didnt know you could use scp to make copies of files or man to get information on the different commands, or mkdir for making new directories from terminal which is very cool. 
