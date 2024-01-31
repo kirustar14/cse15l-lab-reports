@@ -6,7 +6,7 @@ PID: A17877875
  
 ---
 
-# ChatServer Code
+# Part 1: ChatServer Code
 ---
 ```
 //ChatServer.java
@@ -142,4 +142,18 @@ The method 'public String handleRequest(URI url)' has the argument URI url and t
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.<br> </br>
 After our request there is a second value in the ArrayList ans at index 1 which is the String "Ninja1: What+kind+of+shoes+do+ninja's+wear?" and the value at index 0 is the same as before which is the String "Kiruthika: HelloWorld". And our String x has a new value which is "Kiruthika: HelloWorld\nNinja1: What+kind+of+shoes+do+ninja's+wear?", where the \n indicates a new line. This is because the string x concatenates the all the values in our ArrayList ans using \n. And the ArrayList ans updates a new value at the next index for every new request. 
 
+---
+# Part 2: Keys 
+
+
+Absolute Path To Private Key: /home/.ssh/id_ed25519 <br> </br> 
+<img width="1440" alt="Screen Shot 2024-01-30 at 7 30 50 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6f7942cb-3f13-4899-aec2-ea189069a187">
+
+
+Absolute Path To Public Key:/home/linux/ieng6/oce/7b/kmarikumaran/.ssh <br> </br> 
+<img width="1440" alt="Screen Shot 2024-01-30 at 7 44 16 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6cda646f-b8e0-45a4-8845-80187e535dc4">
+
+
+Login In Without Password: 
+<img width="1200" alt="Screen Shot 2024-01-30 at 7 33 51 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/4d58cb36-c247-40dd-9c6b-f98d49053804">
 
