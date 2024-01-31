@@ -7,7 +7,7 @@ PID: A17877875
 ---
 
 # ChatServer Code
-
+---
 ```
 //ChatServer.java
 import java.io.IOException;
@@ -112,20 +112,33 @@ public class Server {
 
 ```
 # Using /add-message 
+---
 
 1. 
 <img width="1440" alt="Screen Shot 2024-01-30 at 10 35 19 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/0359b0a9-fc05-4e35-bd25-ea3d4bacc798">
 
 - Which methods in your code are called?
-  In my code the 'public String handleRequest(URI url)' , 'url.getQuery()', and ' Server.start(port, new Handler())' are the important methods that are called for this program in the file ChatServer.java. And in 
+In my code the 'public String handleRequest(URI url)' , 'url.getQuery()', 'url.getPath()', 'public static void main(String[] args) throws IOException' and ' Server.start(port, new Handler())' are the important methods that are called for this program in the file ChatServer.java. However only the 'url.getQuery()', 'url.getPath()', and 'public String handleRequest(URI url)' methods are called when I update the link at the page. Because the other 2 methods are called when I first run the program. 
+  
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+In Server.start(port, new Handler()) we need to have the user give a port number to start the server on. And the new Handler() means we are creating a new Handler object for this Server we are opening. That is why in the method 'public static void main(String[] args) throws IOException' we are taking in a String array argument, so the user can input the port number when they create the ChatServer. In the method 
+'public String handleRequest(URI url)', the relevant argument is URI url, which is basically the url link we are updating, the method takes in as a argument. And for url.getQuery() method, there are no argumens but basically the URI url argumnet from the handlRequest(URI url) method is used and this method returns the Query portion of the url as a String which is everything after the question mark after the path ends. The method 'url.getPath()' returns the path of the url as a String so we can check if the user is going to normal homepage '/' path, or doing the '/add-message' path in which case we have to check for the message the user is trying to add. In the ChatServer.java file inside the Handler class we have 2 relevant fields. The 'ArrayList<String> ans' and 'String x'. The 'ans' is a ArrayList of Strings that stores all of the messages from the past that have been created using '/add-message?s=<message>&user=<name>' formatted properly using the colon to seperate name and message, as its own value. And the 'x' is the final String that is returned to the page which stores all of the messages form the ArrayList ans together with lines seperating each message. 
 
+
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+For my specific request I inputted '/add-message?s=HelloWorld&user=Kiruthika' so the ArrayList ans field got a new value at index 0 with the String "Kiruthika: HelloWorld" and the String x was also changed to "Kiruthika: HelloWorld". The field ans was empty before with no values and the String x was a empty String but with my specific request both fields have different values. 
+
+
+---
 
 2. <img width="1440" alt="Screen Shot 2024-01-30 at 10 37 32 AM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/1cb0c4a0-2a89-4fb9-9808-da2d05c2baaf">
 
 - Which methods in your code are called?
+Same methods as before are called. The 'public String handleRequest(URI url)' , 'url.getQuery()', 'url.getPath()' are all called. 
+
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+The method 'public String handleRequest(URI url)' has the argument URI url and the url we are giving in now is 
+
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 
