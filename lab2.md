@@ -1,6 +1,6 @@
 Hello World!!!
 
-# Lab Report 1 - Remote Access and FileSystem 
+# Lab Report 2
 Name: Kiruthika Marikumaran 
 PID: A17877875
  
