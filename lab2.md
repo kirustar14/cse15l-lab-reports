@@ -154,7 +154,7 @@ Absolute Path To Public Key: /home/linux/ieng6/oce/7b/kmarikumaran/.ssh <br> </b
 <img width="1440" alt="Screen Shot 2024-01-30 at 7 44 16 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6cda646f-b8e0-45a4-8845-80187e535dc4">
 
 
-Login In Without Password: 
+Login Without Password: 
 <img width="1200" alt="Screen Shot 2024-01-30 at 7 33 51 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/4d58cb36-c247-40dd-9c6b-f98d49053804">
 
 ---
