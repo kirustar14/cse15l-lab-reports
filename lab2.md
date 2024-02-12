@@ -150,7 +150,7 @@ Absolute Path To Private Key: /home/.ssh/id_ed25519 <br> </br>
 <img width="1440" alt="Screen Shot 2024-01-30 at 7 30 50 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6f7942cb-3f13-4899-aec2-ea189069a187">
 
 
-Absolute Path To Public Key: /home/linux/ieng6/oce/7b/kmarikumaran/.ssh <br> </br> 
+Absolute Path To Public Key: /home/linux/ieng6/oce/7b/kmarikumaran/.ssh/id_rsa.pub <br> </br> 
 <img width="1440" alt="Screen Shot 2024-01-30 at 7 44 16 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/6cda646f-b8e0-45a4-8845-80187e535dc4">
 
 
