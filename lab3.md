@@ -102,6 +102,9 @@ grep -c "Introduction" 1468-6708-3-1.txt
 #Output
 1
 ```
+
+The command is looking for the number of lines that contain the pattern "Introductions" withought the quotes, in the spefied file (1468-6708-3-1.txt). This is useful because we can quickly search for how many instances of a pattern we have in our file, and since it counts how many lines we can use it to verify if every line has a required pattern by seeing if the number of lines containing the pattern matches the total number of lines in this file. 
+
 Example #2: 
 
 ---
