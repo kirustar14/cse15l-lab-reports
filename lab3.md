@@ -46,6 +46,8 @@ Input that doesn't induce failure:
 ```
 
 Symptom: 
+<img width="830" alt="Screen Shot 2024-02-13 at 6 17 35 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/d9a537d7-56cc-4e3e-85ef-25d918df9e98">
+
 
 Bug Before/After: 
 
