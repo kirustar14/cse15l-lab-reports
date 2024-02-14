@@ -90,7 +90,23 @@ Iniitally we were changing the values in the original array (arr) and thats what
 
 # Part 2: Researching Commands: grep
 
-Option #1: -c <br> </br>
+Option #1: -c 
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
+Example #1: 
+
+```
+# Command
+grep -c "Introduction" 1468-6708-3-1.txt
+
+#Output
+1
+```
+Example #2: 
+
+---
+
+Option #2: -l
 Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
 Example #1: 
@@ -99,7 +115,7 @@ Example #2:
 
 ---
 
-Option #2:  
+Option #3: -v
 Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
 Example #1: 
@@ -108,16 +124,7 @@ Example #2:
 
 ---
 
-Option #3: 
-Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
-
-Example #1: 
-
-Example #2: 
-
----
-
-Option #4: 
+Option #4: -n
 Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
 Example #1: 
