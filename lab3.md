@@ -11,7 +11,7 @@ PID: A17877875
 Failure inducing input: 
 
 ```
-# ReverseArrayMethod & Failure Inducing Junit Test
+# ReverseArrayMethod & Failure Inducing JUnit Test
 
   // Returns a *new* array with all the elements of the input array in reversed
   // order
