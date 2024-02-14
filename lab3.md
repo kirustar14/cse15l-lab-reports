@@ -959,7 +959,28 @@ Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Example #1: 
 
+```
+#Command
+grep -l "improved health" biomed/*.txt
+
+#Output
+biomed/1468-6708-3-1.txt
+biomed/1475-2875-1-14.txt
+
+```
+This command looks through all the text files in the biomed directory and prints out the file names that have instances of the pattern "improved health". This can be useful if we just want to know the files that contain information related to improvng health or any other specific topic and we don't need details about the specific instances themselves. 
+
 Example #2: 
+
+```
+#Command
+grep -l "problem" biomed/1468-6708-3-3.txt
+
+#Output
+biomed/1468-6708-3-3.txt
+
+```
+This comand looks through the specified file (biomed/1468-6708-3-3.txt) and searches for the instance of the pattern "problem" withought the quotes. And if there is a instance of that pattern then it prints out the file name. This is useful if we just want to see if a file contains a instance of a specific pattern withought any additional details because if the same file name is printed in output we can take that as true, and there are instances of the pattern and if the filename is not printed out then that file contains no instances of that pattern and we can take it as false. 
 
 ---
 
@@ -968,7 +989,84 @@ Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Example #1: 
 
+```
+#Command
+grep -v "a" biomed/1468-6708-3-1.txt
+
+#Output
+
+
+  
+    
+      
+        Introduction
+        elderly [ 9 ] .
+      
+      
+        
+          Study
+        
+        
+        
+        
+          ] .
+          (for persons who were never in excellent, very good, or
+          report results using only the simpler definition.
+          findings.
+        
+        
+        
+        
+        
+      
+      
+        Results
+        likely.
+        from 25 to 29.9. The second column, which shows results
+        under 20.
+        groups.
+        YOL or YHL.
+      
+      
+        Discussion
+        
+        
+        
+          YHL.
+        
+        
+        
+      
+      
+        Conclusion
+        'overweight' by the NHLBI guidelines. This suggests using
+      
+      
+        Competing interests
+      
+      
+        CESD Center for Epidemiologic Studies Depression
+        poor?
+      
+    
+
+
+```
+
+This command looks through the specified file (biomed/1468-6708-3-1.txt) and prints out all lines not containing instances of the letter "a". This is useful because if we want to find all lines withought a specific pattern we can easily find it. And we can verify that all lines have a specified pattern by using this command and seeing if nothing prints out because that means every line has that pattern. 
+
 Example #2: 
+
+```
+#Command
+grep -v "." biomed/1468-6708-3-1.txt biomed/1468-6708-3-3.txt
+
+#Output
+biomed/1468-6708-3-1.txt:
+biomed/1468-6708-3-3.txt:
+
+```
+This command looks through the 2 specified files (biomed/1468-6708-3-1.txt and biomed/1468-6708-3-3.txt) and for each file prints out all the lines that do not contain a period ("."). This is useful because we can verify quickly no lines were printed out for either file meaning every line in both files contains a period. So we can easily check that multiple files have instances of a specific pattern on every line through this command. 
 
 ---
 
@@ -977,7 +1075,208 @@ Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Example #1: 
 
+```
+#Command
+grep -n "adults" biomed/1468-6708-3-1.txt
+
+#Output
+6:        Older adults are frequently counseled to lose weight,
+10:        non-smoking older adults have investigated the association
+16:        adults drew similar conclusions [ 7 ] .
+17:        Many healthy older adults report gradual weight gain
+27:        In older adults, risk factors may have a greater effect
+36:        years of being healthy, in a cohort of older adults for
+42:        modification interventions in older adults.
+50:          population-based longitudinal study of 5,888 adults aged
+324:          categories could be combined for older adults. Since
+338:          interventions for older adults who were merely overweight
+347:          adults are the subjects. This is particularly important
+350:          33 34 ] . For older adults, the risks associated with
+352:          outcome for a trial of weight loss in older adults
+356:          found for underweight older adults. Clinical trials whose
+406:        older adults, especially for women. Future efforts to
+409:        no excess risk for older adults who would be classified as
+412:        obese or underweight older adults, and discouraging trials
+413:        that address older adults who are merely overweight.
+
+```
+This command looks throguh the specified file (1468-6708-3-1.txt ) in the biomed directory for the lines containing instances of the pattern "adults" withought the quotes and prints out every line containing a instance of that pattern along wiht the line number. This is useful because we dont have to search through the file for specific lines the command simply tells us the line number along with the line of the pattern instance which can save us time later on. If we want to go back into the file to edit it now we have the line numbers which will make it easier. 
+
+
 Example #2: 
+
+```
+#Command
+grep -n "Introduction" biomed/*.txt
+
+#Output
+biomed/1468-6708-3-1.txt:5:        Introduction
+biomed/1468-6708-3-4.txt:5:        Introduction
+biomed/1471-2091-2-11.txt:5:        Introduction
+biomed/1471-2091-3-23.txt:403:        binding specificity. Introduction of a single ACS like
+biomed/1471-2105-1-1.txt:5:        Introduction
+biomed/1471-2105-2-8.txt:5:        Introduction
+biomed/1471-2105-3-24.txt:5:        Introduction
+biomed/1471-2121-1-2.txt:5:        Introduction
+biomed/1471-2121-3-10.txt:140:          Introduction,) [ 11 ] , we expected that the Tag
+biomed/1471-213X-1-10.txt:5:        Introduction
+biomed/1471-213X-1-10.txt:332:        Introduction of single copy transgenes into the 
+biomed/1471-213X-1-9.txt:5:        Introduction
+biomed/1471-213X-2-1.txt:5:        Introduction
+biomed/1471-2156-2-7.txt:5:        Introduction
+biomed/1471-2156-3-16.txt:554:        Introduction). Furthermore, the 
+biomed/1471-2156-4-9.txt:128:          anterior cross-vein. Introduction of a single mutant copy
+biomed/1471-2164-3-8.txt:5:        Introduction
+biomed/1471-2172-2-10.txt:5:        Introduction
+biomed/1471-2180-1-16.txt:5:        Introduction
+biomed/1471-2180-1-31.txt:447:          cloned. Introduction of the plasmids into 
+biomed/1471-2199-2-10.txt:5:        Introduction
+biomed/1471-2199-2-2.txt:5:        Introduction
+biomed/1471-2199-2-4.txt:718:          As described in the Introduction, recent studies
+biomed/1471-2199-2-5.txt:5:        Introduction
+biomed/1471-2199-2-5.txt:333:        the expression of CD5 on these subsets (see Introduction to
+biomed/1471-2199-2-6.txt:5:        Introduction
+biomed/1471-2202-2-3.txt:5:        Introduction
+biomed/1471-230X-1-10.txt:5:        Introduction
+biomed/1471-2334-3-9.txt:5:        Introduction
+biomed/1471-2350-2-2.txt:5:        Introduction
+biomed/1471-2350-4-2.txt:450:        the Introduction: the protective or detrimental effects of
+biomed/1471-2377-1-2.txt:5:        Introduction
+biomed/1471-2407-1-13.txt:5:        Introduction
+biomed/1471-2407-1-6.txt:5:        Introduction
+biomed/1471-2415-3-5.txt:847:          apoptosis [ 61 ] . As indicated in the Introduction,
+biomed/1471-2458-1-9.txt:5:        Introduction
+biomed/1471-2474-2-3.txt:10:        Introduction
+biomed/1471-5945-1-3.txt:5:        Introduction
+biomed/1472-6750-1-12.txt:444:          the presence of 250 μg/ml 6-thiogaunine. Introduction of
+biomed/1472-6750-1-13.txt:5:        Introduction
+biomed/1472-6874-2-1.txt:5:        Introduction
+biomed/1472-6882-1-11.txt:5:        Introduction
+biomed/1472-6882-2-5.txt:5:        Introduction
+biomed/1472-6890-2-5.txt:5:        Introduction
+biomed/1472-6963-2-10.txt:5:        Introduction
+biomed/1475-2832-1-1.txt:5:        Introduction
+biomed/1475-2875-2-10.txt:5:        Introduction
+biomed/1476-511X-2-2.txt:5:        Introduction
+biomed/1477-7819-1-10.txt:5:        Introduction
+biomed/1477-7827-1-36.txt:672:        As mentioned in the Introduction, recent studies of the
+biomed/1477-7827-1-54.txt:5:        Introduction
+biomed/1478-1336-1-3.txt:5:        Introduction
+biomed/1478-1336-1-4.txt:387:        Introduction, ERα and ERβ must interact differentially with
+biomed/ar104.txt:7:          Introduction
+biomed/ar104.txt:152:        Introduction
+biomed/ar118.txt:7:          Introduction
+biomed/ar118.txt:250:        Introduction
+biomed/ar120.txt:7:          Introduction
+biomed/ar120.txt:206:        Introduction
+biomed/ar130.txt:7:          Introduction
+biomed/ar130.txt:119:        Introduction
+biomed/ar140.txt:5:        Introduction
+biomed/ar149.txt:5:        Introduction
+biomed/ar297.txt:5:        Introduction
+biomed/ar297.txt:306:          Introduction
+biomed/ar309.txt:5:        Introduction
+biomed/ar319.txt:5:        Introduction
+biomed/ar321.txt:5:        Introduction
+biomed/ar328.txt:5:        Introduction
+biomed/ar331.txt:5:        Introduction
+biomed/ar383.txt:5:        Introduction
+biomed/ar387.txt:5:        Introduction
+biomed/ar407.txt:5:        Introduction
+biomed/ar408.txt:5:        Introduction
+biomed/ar409.txt:5:        Introduction
+biomed/ar409.txt:244:          Supplementary Introduction
+biomed/ar422.txt:5:        Introduction
+biomed/ar429.txt:5:        Introduction
+biomed/ar430.txt:5:        Introduction
+biomed/ar601.txt:5:        Introduction
+biomed/ar612.txt:5:        Introduction
+biomed/ar615.txt:5:        Introduction
+biomed/ar619.txt:5:        Introduction
+biomed/ar624.txt:5:        Introduction
+biomed/ar68.txt:5:        Introduction
+biomed/ar745.txt:5:        Introduction
+biomed/ar750.txt:5:        Introduction
+biomed/ar774.txt:5:        Introduction
+biomed/ar778.txt:5:        Introduction
+biomed/ar79.txt:7:          Introduction
+biomed/ar79.txt:122:        Introduction
+biomed/ar792.txt:5:        Introduction
+biomed/ar792.txt:226:          As described in the Introduction, the aim of studying
+biomed/ar795.txt:5:        Introduction
+biomed/ar799.txt:5:        Introduction
+biomed/ar93.txt:7:          Introduction
+biomed/ar93.txt:167:        Introduction
+biomed/bcr273.txt:7:          Introduction
+biomed/bcr273.txt:287:          Introduction
+biomed/bcr284.txt:5:        Introduction
+biomed/bcr285.txt:7:          Introduction
+biomed/bcr285.txt:225:        Introduction
+biomed/bcr294.txt:7:          Introduction
+biomed/bcr294.txt:108:          Introduction
+biomed/bcr303.txt:5:        Introduction
+biomed/bcr317.txt:5:        Introduction
+biomed/bcr45.txt:7:          Introduction
+biomed/bcr45.txt:222:        Introduction
+biomed/bcr458.txt:5:        Introduction
+biomed/bcr567.txt:5:        Introduction
+biomed/bcr568.txt:5:        Introduction
+biomed/bcr570.txt:5:        Introduction
+biomed/bcr571.txt:5:        Introduction
+biomed/bcr583.txt:5:        Introduction
+biomed/bcr588.txt:5:        Introduction
+biomed/bcr602.txt:5:        Introduction
+biomed/bcr605.txt:5:        Introduction
+biomed/bcr607.txt:5:        Introduction
+biomed/bcr618.txt:5:        Introduction
+biomed/bcr620.txt:5:        Introduction
+biomed/bcr631.txt:5:        Introduction
+biomed/bcr635.txt:5:        Introduction
+biomed/cc103.txt:5:        Introduction
+biomed/cc1044.txt:5:        Introduction
+biomed/cc105.txt:5:        Introduction
+biomed/cc1476.txt:5:        Introduction
+biomed/cc1477.txt:5:        Introduction
+biomed/cc1495.txt:5:        Introduction
+biomed/cc1497.txt:5:        Introduction
+biomed/cc1498.txt:5:        Introduction
+biomed/cc1529.txt:5:        Introduction
+biomed/cc1538.txt:5:        Introduction
+biomed/cc1547.txt:5:        Introduction
+biomed/cc1843.txt:5:        Introduction
+biomed/cc1852.txt:5:        Introduction
+biomed/cc1856.txt:5:        Introduction
+biomed/cc1882.txt:5:        Introduction
+biomed/cc2160.txt:5:        Introduction
+biomed/cc2167.txt:5:        Introduction
+biomed/cc2171.txt:5:        Introduction
+biomed/cc2172.txt:5:        Introduction
+biomed/cc2190.txt:5:        Introduction
+biomed/cc2358.txt:5:        Introduction
+biomed/cc3.txt:5:        Introduction
+biomed/cc300.txt:5:        Introduction
+biomed/cc343.txt:5:        Introduction
+biomed/cc350.txt:5:        Introduction
+biomed/cc367.txt:5:        Introduction
+biomed/cc4.txt:5:        Introduction
+biomed/cc713.txt:5:        Introduction
+biomed/cc973.txt:5:        Introduction
+biomed/cc991.txt:5:        Introduction
+biomed/cvm-2-4-180.txt:5:        Introduction
+biomed/cvm-2-4-187.txt:5:        Introduction
+biomed/gb-2003-4-5-r34.txt:7:          Introduction to cluster analysis
+biomed/rr166.txt:5:        Introduction
+biomed/rr167.txt:5:        Introduction
+biomed/rr171.txt:5:        Introduction
+biomed/rr172.txt:5:        Introduction
+biomed/rr191.txt:5:        Introduction
+biomed/rr196.txt:5:        Introduction
+biomed/rr37.txt:5:        Introduction
+biomed/rr73.txt:5:        Introduction
+biomed/rr74.txt:5:        Introduction
+
+```
+This command looks through all the text files in the biomed directory and for each file prints out the line number and the line containing the instances of the pattern "Introduction". This is useful to verify that certain patterns happen in the same line for multiple files since we can look at the line numbers for each files instance of the word "Introduction" and check if it matches for everything. And we can also make sure every file has only one instance of the word "Introduction" since the specific lines are printed we can check only one line is printed for each file. 
 
 ---
 
