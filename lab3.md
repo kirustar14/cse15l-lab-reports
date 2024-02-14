@@ -17,6 +17,11 @@ Symptom:
 Bug Before/After: 
 
 
+
+
+
+
+
 Choose one of the bugs from week 4's lab.
 
 Provide:
