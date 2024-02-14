@@ -81,19 +81,8 @@ Bug Before/After:
 
 ```
 
+Why fix worked? 
+
+Iniitally we were changing the values in the original array (arr) and thats what we returned. However we needed to swap the newArray and arr and return the newArray, because we dont want to change the values in arr. We only want to change the values in newArray by accesing the vlaues in arr backwards so it is reversed. And then we return the newArray. So the fix worked because now we are storing the values from arr in newArray in reverse order but not changin the values in arr and we return the newArray which has the reversed order values. 
 
 
-
-
-
-Choose one of the bugs from week 4's lab.
-
-Provide:
-
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-
-An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
