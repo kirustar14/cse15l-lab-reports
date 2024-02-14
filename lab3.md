@@ -85,4 +85,45 @@ Why fix worked?
 
 Iniitally we were changing the values in the original array (arr) and thats what we returned. However we needed to swap the newArray and arr and return the newArray, because we dont want to change the values in arr. We only want to change the values in newArray by accesing the vlaues in arr backwards so it is reversed. And then we return the newArray. So the fix worked because now we are storing the values from arr in newArray in reverse order but not changin the values in arr and we return the newArray which has the reversed order values. 
 
+ 
+---
+
+# Part 2: Researching Commands: grep
+
+Option #1: -c 
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
+Example #1: 
+
+Example #2: 
+
+---
+
+Option #2:  
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
+Example #1: 
+
+Example #2: 
+
+---
+
+Option #3: 
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
+Example #1: 
+
+Example #2: 
+
+---
+
+Option #4: 
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
+Example #1: 
+
+Example #2: 
+
+---
+
 
