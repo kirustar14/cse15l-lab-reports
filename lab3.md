@@ -10,6 +10,7 @@ PID: A17877875
 
 Failure inducing input: 
 
+```
 # ReverseArrayMethod & Failure Inducing Junit Test
 
   // Returns a *new* array with all the elements of the input array in reversed
@@ -29,7 +30,7 @@ Failure inducing input:
     assertArrayEquals(new int[]{9, 7, 6, 4}, ArrayExamples.reversed(input1));
   }
   
-
+```
   
 
 Input that doesn't induce failure: 
