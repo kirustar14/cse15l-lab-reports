@@ -10,6 +10,28 @@ PID: A17877875
 
 Failure inducing input: 
 
+# ReverseArrayMethod & Failure Inducing Junit Test
+
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+
+  //Failure Inducing JUnit Test
+  @Test
+  public void testReversed1() {
+    int[] input1 = {4, 6, 7, 9};
+    assertArrayEquals(new int[]{9, 7, 6, 4}, ArrayExamples.reversed(input1));
+  }
+  
+
+  
+
 Input that doesn't induce failure: 
 
 Symptom: 
