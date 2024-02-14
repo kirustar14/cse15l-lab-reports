@@ -90,7 +90,7 @@ Iniitally we were changing the values in the original array (arr) and thats what
 
 # Part 2: Researching Commands: grep
 
-Option #1: -c 
+Option #1: -c <br>
 Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
 Example #1: 
