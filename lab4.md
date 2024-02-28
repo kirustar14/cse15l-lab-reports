@@ -89,7 +89,7 @@ Keys Pressed:
 First I pressed the <up> key three times because the command 'javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java' was 3 up in my command history and then I pressed <enter> to recompile all the java files in lab7. The I pressed <up> key 3 times again, because now the command 'java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests' was 3 up in my history, and I pressed <enter> to run the command which ran the tester file and now all the tests worked. 
 
 ---
-# Step 9: 
+# Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
 ---
 
 
