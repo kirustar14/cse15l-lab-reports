@@ -61,16 +61,20 @@ First I changed directories into lab7 by running the command 'cd lab7' and press
 ```
 Keys Pressed: 
 1. vim ListExamples.java
-2. 43J
-3. E
-4. R
-5. 2
-6. <esc>
-7. :wq
-8. <enter> 
+2. 4
+3. 3
+4. J
+5. E
+6. R
+7. 2
+8. <esc>
+9. :
+10. w
+11. q
+12. <enter> 
 
 
-First I typed 'vim ListExamples.java' to open the file ListExamples.java which has the error in the terminal with vim. Then I pressed 43J, because J moves your cursor down and pressing 43J moved my cursor down 43 times and the error to fix is on that line. Then I pressed E which moves my cursor to the end of the word 'index1' which is where my error is because I need to change the 1 to a 2. Then I press R, which goes to replace which lets me replace the character my cursor is currently on (1) with a character I will type next. So I press 2, to replace the 1 with a 2. Then I press <esc> key to go back to normal mode. Then I press :wq, and press the <enter> key which saves my work and exits vim. 
+First I typed 'vim ListExamples.java' to open the file ListExamples.java which has the error in the terminal with vim. Then I pressed 4, then 3, then J, because J moves your cursor down and pressing 4 then 3 then J moved my cursor down 43 times and the error to fix is on that line. Then I pressed E which moves my cursor to the end of the word 'index1' which is where my error is because I need to change the 1 to a 2. Then I press R, which goes to replace which lets me replace the character my cursor is currently on (1) with a character I will type next. So I press 2, to replace the 1 with a 2. Then I press <esc> key to go back to normal mode. Then I press :, then w, then, q, and press the <enter> key which saves my work and exits vim. 
 ```
 
 ---
