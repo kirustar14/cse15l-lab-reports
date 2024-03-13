@@ -17,12 +17,13 @@ I am failing my filter test in ListExamples and I don't know why. The list was e
 
 
 <img width="564" alt="Screen Shot 2024-03-12 at 7 51 37 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/d97da016-a633-4524-8c9d-703c5a2da4e2">
-
+---
 
 2. TA
 
 Hi! It looks like the issue stems from how you are adding the items to the final list in filter since none of the items in the expected showed up in the actual. Could you try identifying inside the filter method where you are checking if a item should be added to the list or not? 
 
+---
 3. Student: Spongebob Squarepants
 
 Oh that makes a lot of sense, originally I had my filter method adding items if they were not approved by the string checker. I changed the line !sc.checkString(s) to just sc.checkString(s). However I am getting a different problem now and the filter test is still failing. There is only one item that appears in the list (hi) when the expected list is [Fire, air, 123, hi]. I think it is because of how many items I am adding to the list but I dont knwo where the problem is. Can you help me solve this please? 
@@ -36,10 +37,12 @@ New Filter Method:
 New Test Results: 
 <img width="479" alt="Screen Shot 2024-03-12 at 7 59 56 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/8f1b155e-c7ab-4a6f-911c-ddb5b7da3478">
 
+---
 4. TA
 
 It seems like you are not adding all the items the list should have but the string checker itself is still working. So the problem may be with how you make the final list itself? Could you check where and when you create the list?
 
+---
 6. Student: Spongebob Squarepants
 
 Ah I see I was able to fix it now! I realized I was initializing the list in each iteration of the for loop so the previous items went away when a new item was added. Because I had the line 'result = new ArrayList<>();' inside my for loop. And thats why in the end only the "hi" showed up in the list because it was the last item added after passing the string checker. I simply took that line out. And I ran the command 'bash test.sh' in the terminal to run my tests which caught the bug in the first place, and now they all pass! Thank you so much for your help!
@@ -58,6 +61,7 @@ testFilter Method in ListExamplesTests.java:
 Tests Passing: By running command 'bash test.sh' which goes to test.sh file that compiles all java files in this directory and runs the ListExamplesTests.java file
 <img width="406" alt="Screen Shot 2024-03-12 at 8 07 12 PM" src="https://github.com/kirustar14/cse15l-lab-reports/assets/148379107/0a094492-3463-4188-bf3f-121ab492c543">
 
+---
 6. TA
 
 Good job on finding the bug! If you need any more help please feel free to ask!
