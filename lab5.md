@@ -44,7 +44,7 @@ New Test Results:
 It seems like you are not adding all the items the list should have but the string checker itself is still working. So the problem may be with how you make the final list itself? Could you check where and when you create the list?
 
 ---
-6. Student: Spongebob Squarepants
+5. Student: Spongebob Squarepants
 
 Ah I see I was able to fix it now! I realized I was initializing the list in each iteration of the for loop so the previous items went away when a new item was added. Because I had the line 'result = new ArrayList<>();' inside my for loop. And thats why in the end only the "hi" showed up in the list because it was the last item added after passing the string checker. I simply took that line out. And I ran the command 'bash test.sh' in the terminal to run my tests which caught the bug in the first place, and now they all pass! Thank you so much for your help!
 
